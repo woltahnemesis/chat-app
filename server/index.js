@@ -16,4 +16,7 @@ io.on('connection', (socket) => {
 })
 
 // Listen to port 8080
-http.listen(8080, () => console.log('Listening on http://localhost:8080'))
+// http.listen(8080, () => console.log('Listening on http://localhost:8080'))
+
+const port = process.env.PORT || 8080;
+http.listen(port, () => console.log(`Listening on port ${port}`));
