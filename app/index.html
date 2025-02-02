@@ -10,12 +10,118 @@
 </head>
 <body>
 
-    <ul>
+    <div id="container">
+        <h1>Chat Web App</h1>
+        <ul>
         
-    </ul>
+        </ul>
 
-    <input placeholder="message">
-    <button>Send</button>
+        <div class="text-area">
+            <input placeholder="Type here...">
+            <button>Send</button>
+        </div>
+    </div>
+
+    <style>
+        #container {
+            font-family: 'Inter', sans-serif;
+            background-color: #E2E0C8;
+            width: 50%;
+            margin: 0 auto;
+            border-radius: 7px;
+            padding: 15px;
+        }
+
+        h1 {
+            color: #818C78;
+            font-weight: 600;
+            margin: 0 0 0 5px;
+        }
+
+        #container ul {
+            padding: 5px 5px;
+            /* background-color: gray; */
+            height: 250px;
+            border-radius: 7px 7px 0 0;
+/* 
+            -ms-overflow-style: none;
+            scrollbar-width: none; */
+            overflow-y: auto;
+            scroll-behavior: smooth;
+        }
+
+        #container ul::-webkit-scrollbar { 
+            width: 10px;
+            background-color: transparent;
+        }
+
+        #container ul::-webkit-scrollbar-thumb { 
+            width: 10px;
+            background-color: #A7B49E;
+            border-radius: 4px;
+        }
+
+        #container ul li {
+            margin: 5px 10px;
+            padding: 5px;
+            background-color: #818C78;
+            list-style-type: none;
+            word-break: break-word;
+            border-radius: 5px;
+        }
+
+        #container .text-area {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        #container .text-area input {
+            width: 100%;
+            height: 30px;
+            margin-right: 10px;
+            border-radius: 7px;
+            border: 0 solid;
+            padding-left: 5px;
+        }
+
+        #container .text-area input:focus {
+            outline: 2px solid #5C7285;
+            padding-left: 5px;
+        }
+
+        #container .text-area button {
+            height: 30px;
+
+            font-family: 'Inter', sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+            color: #E2E0C8; /* Warm beige text */
+            background-color: #5C7285; /* Muted blue button */
+            padding: 10px 16px;
+            border: 0 solid; /* Soft sage border */
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background 0.2s ease-in-out, border 0.2s ease-in-out;
+
+            /* Centering the text */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        #container .text-area button:hover{
+            background-color: #818C78; /* Earthy green hover */
+        }
+
+        #container .text-area button:active{
+            background-color: #818C78; /* Earthy green hover */
+        }
+
+    </style>
     
 </body>
 </html>

@@ -11,7 +11,7 @@ io.on('connection', (socket) => {
     socket.on('message', (message) => {
         console.log('message: ' + message)
         // Send message to all connected clients
-        io.emit('message', `${socket.id.substr(0,2)} said ${message}`)
+        io.emit('message', `Anonymous-${socket.id.substr(0,2)}: ${message}`)
     })
 })
 
