@@ -1,6 +1,6 @@
 // const socket = io('ws://localhost:8080')
 // const socket = io('ws://localhost:5006')
-const socket = io('wss://chat-web-app-f71757d69e07.herokuapp.com');
+const socket = io('https://chat-web-app-f71757d69e07.herokuapp.com/');
 
 // Display message on browser
 socket.on('message', text => {
